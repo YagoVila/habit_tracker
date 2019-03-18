@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 	<body>
+	<body style="background-color:gray;">
 	<?php
 
 		include './database.php';
@@ -24,7 +25,7 @@
 			echo "Hábito borrado";
 		}
 	?>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				  <a class="navbar-brand" href="#">Habit Tracker</a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
 				  <div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 					  <li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="index.php">Home </a>
 					  </li>
 					  <li class="nav-item active ">
 						<a class="nav-link" href="habitos.php">Hábitos</a>
@@ -58,6 +59,11 @@
 			echo "Aínda non se creou ningún hábito";
 		}
 	
+
+
+		
+
+
 	?>
 	<p>Se precisas axuda, le <a href="https://habitualmente.com/pasos-para-cambiar-de-habitos/">isto</a>.</p>
 	<form name="habito" method="post" action="habitos.php">
